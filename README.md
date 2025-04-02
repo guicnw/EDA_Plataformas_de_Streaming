@@ -1,35 +1,94 @@
-# EDA_Plataformas_de_Streaming  
+# Análisis Exploratorio de Contenido de Plataformas de Streaming
 
-Análisis Exploratorio de Datos sobre Plataformas de Entretenimiento
-Este proyecto consiste en un Análisis Exploratorio de Datos (EDA) enfocado en diversas plataformas de entretenimiento, con el objetivo de descubrir patrones, tendencias y características clave dentro del contenido que ofrecen. Se utiliza un conjunto de datos relacionados con las plataformas Netflix, Amazon Prime, HBO y el ranking de IMDB de series y peliculas para realizar comparativas, evaluaciones y visualizaciones.
+Este proyecto realiza un análisis exploratorio de datos (EDA) sobre tres plataformas de streaming populares en España: **Netflix**, **Amazon Prime Video** y **HBO Max**. El análisis se complementa con rankings de **IMDb** y mis propias valoraciones personales como espectador, con el objetivo de identificar cuál es la plataforma más adecuada desde múltiples enfoques: cantidad de contenido, calidad, disponibilidad por región y afinidad con los gustos personales.
 
-Objetivo del Proyecto
-El objetivo principal es analizar los datos proporcionados para:
--Identificar patrones en el contenido disponible en distintas plataformas.
--Analizar la expansión regional de cada plataforma y las diferencias de contenido entre regiones.
--Comparar la cantidad y calificación media de películas y series en las distintas plataformas.
--Descubrir tendencias en géneros y distribución temporal del contenido.
--Explorar relaciones entre las calificaciones personales y el contenido disponible en las plataformas.
+---
 
-Tecnologías y Herramientas Utilizadas
--Lenguaje de Programación: Python
--Análisis de Datos: pandas, numpy
--Visualización de Datos: matplotlib, seaborn
--Entorno de Desarrollo: Visual Studio Code
+## Objetivos del Proyecto
 
-Fuentes de Datos:
--Netflix (títulos y características)(kaggle)
--Amazon Prime (títulos y características)(kaggle)
--HBO (títulos y características)(kaggle)
--IMDB (Top 250 películas y series)(kaggle)
--Calificaciones personales de IMDB (imdb)
+- Comparar **cantidad de contenido** entre plataformas.
+- Evaluar la **calidad promedio** de los títulos usando datos de IMDb.
+- Estudiar la **distribución de géneros** y la proporción entre películas y series.
+- Analizar la **disponibilidad regional** de contenidos (España, EE.UU., México).
+- Relacionar los catálogos con:
+  - El **Top 250 de IMDb** (películas y series).
+  - Mis **valoraciones personales en IMDb**.
+- Contrastar la oferta de contenido con los **precios de suscripción actuales**.
 
-Estructura del Proyecto
--Carga y Limpieza de Datos: Preprocesamiento para eliminar datos faltantes, duplicados y outliers.
--Exploración de Datos: Análisis descriptivo de cada dataset.
--Gráficos y diagramas para representar las tendencias y relaciones.
--Comparativa entre Plataformas: Análisis cruzado entre datasets para identificar diferencias clave.
--Comparativa entre valoraciones personales de imdb.
--Conclusiones: Resumen de los hallazgos más relevantes.
+---
 
-Autor: Guillermo Castillón Novo
+## Estructura del Proyecto
+
+```
+.
+├── main.ipynb               # Notebook principal con el análisis final
+├── README.md                # Este archivo
+├── Memoria                  # Documento de memoria del proyecto (PDF)
+├── Presentación             # Versión PDF de la presentación final
+└── src
+    ├── data                 # Datos limpios utilizados en el análisis
+    ├── img                  # Gráficos generados
+    ├── notebooks            # Notebooks de prueba y desarrollo
+    └── utils
+        └── limpieza.py      # Clase de limpieza usada para los datasets
+```
+
+---
+
+## Visualizaciones Destacadas
+
+- Comparativas de cantidad y calidad por plataforma.
+- Disponibilidad de títulos del Top IMDb por plataforma.
+- Densidad de lanzamientos por año.
+- Análisis de gustos personales por género y año.
+- Mapa de calor de distribución de contenido por categoría temporal.
+
+---
+
+## Tecnologías Utilizadas
+
+- **Python** 3.11
+- **Pandas** para manipulación de datos.
+- **Matplotlib & Seaborn** para visualización.
+- **Jupyter Notebooks** dentro de **Visual Studio Code**.
+
+---
+
+## Cómo Ejecutar el Proyecto
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu_usuario/eda-streaming.git
+   cd eda-streaming
+   ```
+
+2. Crea un entorno virtual (opcional pero recomendado):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # En Windows: venv\Scripts\activate
+   ```
+
+3. Instala las dependencias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Abre `main.ipynb` en Jupyter o Visual Studio Code y ejecuta el análisis paso a paso.
+
+---
+
+## Datos
+
+Los datasets utilizados han sido limpiados y normalizados para asegurar consistencia. Solo se han subido versiones ligeras de los mismos si su tamaño original excedía el límite recomendado para GitHub.
+
+---
+
+## Notas Finales
+
+Este proyecto combina análisis de datos con elementos personales para ofrecer una visión integral sobre qué plataforma de streaming se adapta mejor, tanto en términos objetivos como subjetivos. Representa un trabajo completo de exploración, visualización y reflexión, aplicable a distintos perfiles de usuarios.
+
+Autor: Guillermo Castillón Novo  
+Año: 2024
+
+
+
